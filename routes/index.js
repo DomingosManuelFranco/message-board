@@ -24,7 +24,7 @@ router.get('/', function(req, res, next) {
 
 //GET form page
 router.get('/new', function(req, res, next) {
-  res.render('form');
+  res.render('form', {heading: "Form"});
 });
 
 
