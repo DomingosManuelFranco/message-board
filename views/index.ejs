@@ -9,14 +9,17 @@
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-    <ul>
-      <% for(let message of messages) {%>
-        <li><%= message.user %></li>
-        <li><%= message.text %></li>
-        <li><%= message.added %></li>
-        <% }%>
-    </ul>
+    <div class="container">
+      <!-- Content here -->
+      <h1 class="display-3"><%= title %></h1>
+      <p class="lead">Welcome to <%= title %></p>
+      <ul>
+        <% for(let message of messages) {%>
+          <li><%= message.user %></li>
+          <li class="lead"><%= message.text %></li>
+          <li class="text-muted"><%= message.added %></li>
+          <% }%>
+      </ul>
+    </div>
   </body>
 </html>
